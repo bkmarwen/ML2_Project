@@ -31,7 +31,34 @@ The preprocessing steps included:
 - **Addressing Class Imbalance**: RandomOverSampler was applied to oversample the minority class.
 - **Feature Selection**: Recursive Feature Elimination (RFE) was employed to identify the top features.
 
-## Model Building
+## Model Trainer Workflow
+The `model trainer` is designed to streamline the process of training a machine learning model for predicting company bankruptcy. It incorporates data preprocessing, handles class imbalance, and performs hyperparameter tuning while ensuring that relevant metrics and model information are logged for transparency and reproducibility.
+
+1. **Data Acquisition**: The function begins by fetching a dataset from the UCI Machine Learning Repository, specifically focused on Polish companies' bankruptcy data.
+
+2. **Data Preparation**:
+   - The dataset is split into features (independent variables) and the target variable (bankruptcy status).
+   - It eliminates duplicates and cleans the dataset, ensuring only relevant information is retained.
+   - The data is divided into training and testing sets, typically following an 80-20 split.
+
+3. **Feature Selection**: A predefined set of significant features is selected to enhance the model's predictive power.
+
+4. **Handling Class Imbalance**: The function utilizes oversampling techniques to address class imbalance in the training data, ensuring that minority classes are adequately represented.
+
+5. **Data Preprocessing Pipeline**: A pipeline is created to standardize data preprocessing steps, which may include handling missing values and scaling features for better model performance.
+
+6. **Model Pipeline Construction**: The function constructs a complete machine learning pipeline that combines preprocessing steps with the chosen classifier.
+
+7. **Hyperparameter Tuning**: It employs grid search with cross-validation to identify the best hyperparameters for the model, optimizing its performance.
+
+8. **Model Training and Logging**:
+   - An MLflow tracking run is initiated, which logs parameters, metrics, and model artifacts for future reference.
+   - The function calculates key performance metrics, such as precision, recall, F1 score, and accuracy, to evaluate model effectiveness.
+
+9. **Results Reporting**: After training, the function outputs the best model’s performance metrics and saves a classification report for review.
+
+
+## Model Selection
 We built and evaluated three machine learning models:
 1. **Decision Tree**
 2. **Random Forest**
@@ -39,7 +66,7 @@ We built and evaluated three machine learning models:
 
 Hyperparameter tuning was performed using GridSearchCV, focusing on maximizing recall.
 
-## Model Comparison and Selection
+## Model Comparison
 The performance of the models was compared using recall as the primary metric:
 - **Gradient Boosting**: Highest recall of **0.806**.
 - **Random Forest**: Recall of **0.421**.
