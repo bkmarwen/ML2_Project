@@ -19,7 +19,7 @@ During the exploratory data analysis (EDA) of the Polish companies bankruptcy da
 - **Missing Values**: A number of features had missing values, which needed to be addressed.
 - **Distribution Analysis**: The distribution of values for one of the features, profit on operating activities, was examined using a boxplot. The plot revealed a highly skewed distribution with several outliers. This suggests that some form of data transformation or feature engineering may be required to improve the performance of the model.
 - **Class Imbalance**: Another key observation from the EDA was the class imbalance in the dataset. Most companies in the dataset were not bankrupt, indicating that the majority class is much larger than the minority class. This has important implications for the modeling stage, as it may lead to biased results. Techniques such as oversampling or undersampling can be used to address this issue.
-- **Model Suitability**: Autocorrelation issues were identified, indicating that linear models may not be the best fit for this dataset. Tree-based models, such as random forests or decision trees, may be better suited to capturing the non-linear relationships between the features and the target variable.
+
 
 Overall, the EDA provided valuable insights into the data and highlighted several issues that need to be addressed during the data preparation and modeling stages.
 
