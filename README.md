@@ -24,9 +24,9 @@ Overall, the EDA provided valuable insights into the data and highlighted severa
 The preprocessing steps included:
 - **Splitting the Data**: The dataset was divided into training (80%) and testing (20%) sets.
 - **Imputing Missing Values**: Median values were used for imputation.
-- **Feature Selection**: Recursive Feature Elimination (RFE) was employed to identify the top features.
 - **Scaling**: StandardScaler was used to standardize features.
 - **Addressing Class Imbalance**: RandomOverSampler was applied to oversample the minority class.
+- **Feature Selection**: Recursive Feature Elimination (RFE) was employed to identify the top features.
 
 ## Model Building
 We built and evaluated three machine learning models:
@@ -38,9 +38,9 @@ Hyperparameter tuning was performed using GridSearchCV, focusing on maximizing r
 
 ## Model Comparison and Selection
 The performance of the models was compared using recall as the primary metric:
-- **Gradient Boosting**: Highest recall of **0.719**.
-- **Random Forest**: Recall of **0.348**.
-- **Decision Tree**: Recall of **0.427**.
+- **Gradient Boosting**: Highest recall of **0.806**.
+- **Random Forest**: Recall of **0.421**.
+- **Decision Tree**: Recall of **0.468**.
 
 Gradient Boosting was selected as the best model for predicting bankrupt companies.
 
