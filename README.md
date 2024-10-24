@@ -1,7 +1,7 @@
 # Predicting Bankruptcy in Poland
 
 ## Introduction
-The goal of this project is to develop a predictive model that identifies potentially bankrupt companies using the Polish companies bankruptcy dataset. This is a crucial task for regulatory agencies, investors, and financial institutions to mitigate potential financial losses. Our focus is on maximizing recall to ensure that we capture as many bankrupt companies as possible.
+The goal of this project is to develop a predictive model that identifies potentially bankrupt companies using the Polish companies bankruptcy dataset. This is an important task for regulatory agencies, investors, and financial institutions to mitigate potential financial losses. Our focus is on maximizing recall to ensure that we capture as many bankrupt companies as possible.
 
 ## Dataset Description
 - The Polish companies bankruptcy dataset contains information on companies that have filed for bankruptcy in Poland.
