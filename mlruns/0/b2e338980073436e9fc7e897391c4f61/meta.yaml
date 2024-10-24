@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Marwen/Desktop/Bankruptcy_Prediction/mlruns/0/b2e338980073436e9fc7e897391c4f61/artifacts
+end_time: 1729682242259
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b2e338980073436e9fc7e897391c4f61
+run_name: nosy-elk-400
+run_uuid: b2e338980073436e9fc7e897391c4f61
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729682242101
+status: 4
+tags: []
+user_id: Marwen

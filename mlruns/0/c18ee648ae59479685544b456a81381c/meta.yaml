@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Marwen/Desktop/Bankruptcy_Prediction/mlruns/0/c18ee648ae59479685544b456a81381c/artifacts
+end_time: 1729683204790
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c18ee648ae59479685544b456a81381c
+run_name: funny-wren-226
+run_uuid: c18ee648ae59479685544b456a81381c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729682399116
+status: 3
+tags: []
+user_id: Marwen
